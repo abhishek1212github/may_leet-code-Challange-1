@@ -11,7 +11,7 @@ int firstBadVersion(int n)
            4-true   
            5-true   
            */
-        int m=l+(u-l)/2;
+        int m=l+(u-l)/2;   // or m=(l+u)/2 ,i took m=l+(u-l)/2 to avoid overflow condition
         if(!isBadVersion(m))
         {
          l=m+1;   
@@ -23,3 +23,8 @@ int firstBadVersion(int n)
     
     
 }
+
+/*time complexity O(logn)
+  space complexity O(1)
+           */
+
