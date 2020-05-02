@@ -26,8 +26,10 @@ public:
         {
             for(int j=0;j<J.size();j++)
             {
-                if(S[j]==J[i])
-                    count++;
+                if(S[i]==J[j])
+                {   count++;
+                    break;
+                }
             }
         }
         return count;
